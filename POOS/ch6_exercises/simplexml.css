@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	color:#303030;
+	background-color: #FFF;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+h1, h2 {
+	font-family:Verdana, Geneva, sans-serif;
+	margin: 1em auto .25em 20px;
+	font-size: 150%;
+	color:#245E50;
+}
+h2 {
+	font-size:110%;
+	margin-left:40px;
+}
+p {
+	margin: 0 auto 1em 75px;
+	width:620px;
+}
+.author, .publisher {
+	font-weight:bold;
+	font-style:italic;
+	margin-left:50px;
+	margin-bottom:0;
+	color:#245E50;
+}
+.publisher {
+	font-style:normal;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+	<channel>
+		<title>OOP News</title>
+		<link>http://www.example.com/oop_news.xml</link>
+		<description>Get the lowdown on OOP and PHP.</description>
+		<lastBuildDate>Sat, 14 Jun 2008 15:35:47 +0100</lastBuildDate>
+		<docs>http://www.rssboard.org/rss-specification</docs>
+		<item>
+			<title>Stumped for something to say</title>
+			<description>Well, so much for a brilliant start. My mind has gone a blank.</description>
+			<pubDate>Fri, 25 Apr 2008 14:50:31 +0100</pubDate>
+			<link>http://www.example.com/detail.php?article_id=2</link>
+		</item>
+		<item>
+			<title>The blog starts here!</title>
+			<description>The world has been waiting with bated breath, but &lt;strong&gt;the wait is over...&lt;/strong&gt; It's time to dazzle the blogosphere with my dazzling wit. Stay tuned.</description>
+			<pubDate>Fri, 25 Apr 2008 14:03:48 +0100</pubDate>
+			<link>http://www.example.com/detail.php?article_id=1</link>
+		</item>
+		<item>
+			<title>Oopsa-daisy!</title>
+			<description>Now the truth can finally be told... The original title for my book was &quot;Object-Oriented PHP Solutions&quot;, but OOPS didn't sound quite right.</description>
+			<pubDate>Mon, 21 Apr 2008 13:27:56 +0100</pubDate>
+			<link>http://www.example.com/detail.php?article_id=3</link>
+		</item>
+		<item>
+			<title>Only two chapters to go</title>
+			<description>It's been a long haul, but the end is almost in sight. I hope everyone has enjoyed this journey through OOP as much as I have writing it.</description>
+			<pubDate>Mon, 21 Apr 2008 13:23:04 +0100</pubDate>
+			<link>http://www.example.com/detail.php?article_id=4</link>
+		</item>
+	</channel>
+</rss>

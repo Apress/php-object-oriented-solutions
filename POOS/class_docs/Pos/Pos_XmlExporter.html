@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Pos_XmlExporter</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Pos_XmlExporter</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A class for generating XML from a MySQL database query.</p>
+<p class="description"><p>Generates XML from a SQL query, and outputs it either to a file  or ready to send in response to a request.</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> David Powers</li>
+				<li><span class="field">version:</span> 1.0.0</li>
+				<li><span class="field">copyright:</span> David Powers 2008</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_XmlExporter.php.html">/XmlExporter.php</a> (line <span class="field">13</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../Pos/Pos_RssFeed.html">Pos_RssFeed</a>
+					</td>
+					<td>
+											A class for generating an RSS 2.0 feed from a MySQL database query.
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type"><a href="../Pos/Pos_MysqlImprovedConnection.html">Pos_MysqlImprovedConnection</a></span>
+					<a href="#$_dbLink" title="details" class="var-name">$_dbLink</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_docRoot" title="details" class="var-name">$_docRoot</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_element" title="details" class="var-name">$_element</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">bool</span>
+					<a href="#$_indent" title="details" class="var-name">$_indent</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_indentString" title="details" class="var-name">$_indentString</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_primaryKey" title="details" class="var-name">$_primaryKey</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_sql" title="details" class="var-name">$_sql</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_xmlFile" title="details" class="var-name">$_xmlFile</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																								<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">Pos_XmlExporter</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$database</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#checkValidName" title="details" class="method-name">checkValidName</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">int|string</span>
+										<a href="#generateXML" title="details" class="method-name">generateXML</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setFilePath" title="details" class="method-name">setFilePath</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pathname</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$indent</span> = <span class="var-default">true</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$indentString</span> = <span class="var-default">&quot;\t&quot;</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setQuery" title="details" class="method-name">setQuery</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setTagNames" title="details" class="method-name">setTagNames</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$docRoot</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$element</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#usePrimaryKey" title="details" class="method-name">usePrimaryKey</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_dbLink" id="$_dbLink"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type"><a href="../Pos/Pos_MysqlImprovedConnection.html">Pos_MysqlImprovedConnection</a></span>
+			<span class="var-name">$_dbLink</span>
+						(line <span class="line-number">20</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores a MySQL database connection.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_docRoot" id="$_docRoot"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_docRoot</span>
+						(line <span class="line-number">32</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Custom name for root element.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_element" id="$_element"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_element</span>
+						(line <span class="line-number">36</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Custom name for top-level nodes.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_indent" id="$_indent"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$_indent</span>
+						(line <span class="line-number">55</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flag that determines whether to indent child nodes when written to file.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_indentString" id="$_indentString"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_indentString</span>
+						(line <span class="line-number">48</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">String defining how child nodes are to be indented when written to file.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_primaryKey" id="$_primaryKey"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_primaryKey</span>
+						(line <span class="line-number">40</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Name of table whose primary key is to be used a attribute in opening tag of top-level elements.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_sql" id="$_sql"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_sql</span>
+						(line <span class="line-number">28</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">SQL query that retrieves data to be output as XML.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_xmlFile" id="$_xmlFile"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_xmlFile</span>
+						(line <span class="line-number">44</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Path and filename of file that generated XML is to be written to.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">68</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor - establishes connection to database.</p>
+<p class="description"><p>The constructor checks that XMLWriter and MySQLi are installed, and uses the  database login details to create a Pos_MysqlImprovedConnection object.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Pos_XmlExporter</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$database</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$server</span><span class="var-description">: Name of the database server host.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$username</span><span class="var-description">: Name of user account for database connection.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$password</span><span class="var-description">: User account password.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$database</span><span class="var-description">: Name of database to be queried.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheckValidName" id="checkValidName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">checkValidName</span> (line <span class="line-number">239</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks that names conform to the XML tag naming conventions.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Returns the name if valid; otherwise throws an exception.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			checkValidName
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name to be checked.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgenerateXML" id="generateXML"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">generateXML</span> (line <span class="line-number">161</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Implements the options set by other methods, and generates the XML output.</p>
+<p class="description"><p>The database column names are used as the names of the child nodes. The names  are passed to the protected checkValidName() method to make sure they conform  to the XML tag naming conventions. If a column name is rejected, create an alias  in the SQL passed to the setQuery() method.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> If XML written to file, returns number of bytes; otherwise returns XML as string.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int|string</span>
+		<span class="method-name">
+			generateXML
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Pos/Pos_RssFeed.html#methodgenerateXML">Pos_RssFeed::generateXML()</a>
+								: Generates the RSS 2.0 feed and saves it to a file or outputs as a string.
+							</li>
+				</ul>
+	</div>
+<a name="methodsetFilePath" id="setFilePath"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setFilePath</span> (line <span class="line-number">144</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the path and filename of file to which XML is to be written.</p>
+<p class="description"><p>Using this method is optional. If used, the class uses the XMLWriter::openUri()  method to write the output to file. If not used, XMLWriter::openMemory() is called  instead to generate XML to be captured in a variable.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setFilePath
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pathname</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$indent</span> = <span class="var-default">true</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$indentString</span> = <span class="var-default">&quot;\t&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pathname</span><span class="var-description">: Name of file (and path, if required) to write XML to.</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$indent</span><span class="var-description">: Determines whether child nodes are indented; defaults to true.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$indentString</span><span class="var-description">: Defines the string to be used to indent child nodes.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetQuery" id="setQuery"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setQuery</span> (line <span class="line-number">89</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the SQL query for the data required to be output as XML.</p>
+<p class="description"><p>The order and number of items in the XML output is determined solely  by the SQL query. If the database uses column names that would be  illegal as XML tag names, create a suitable alias in the SQL for  such columns.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setQuery
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$sql</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$sql</span><span class="var-description">: SQL query to retrieve data to be output as XML.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetTagNames" id="setTagNames"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setTagNames</span> (line <span class="line-number">106</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets custom names for the root and top-level nodes of the XML document.</p>
+<p class="description"><p>Using this method is optional. If custom names are not set using this method,  the class uses the default names (&quot;root&quot; and &quot;row&quot;).</p><p>Calls the protected checkValidName() method to ensure that the names  comply with XML tag naming rules.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setTagNames
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$docRoot</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$element</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$docRoot</span><span class="var-description">: Custom name for root element.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$element</span><span class="var-description">: Custom name for top-level nodes.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodusePrimaryKey" id="usePrimaryKey"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">usePrimaryKey</span> (line <span class="line-number">123</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the name of the table from which the primary key is to be used as an attribute  in the opening tag of each top-level node.</p>
+<p class="description"><p>Using this method is optional. If not used, the primary key, if any, is included  as a normal child node. Otherwise, the method queries the database, and stores in  the $_primaryKey property an array containing the name(s) of the table's primary  key(s).</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			usePrimaryKey
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span><span class="var-description">: Name of database table from which primary key is to be extracted.</span>			</li>
+				</ul>
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Pos/Pos_RssFeed.html#methodusePrimaryKey">Pos_RssFeed::usePrimaryKey()</a>
+								: Dummy method to override the inherited method and prevent its use.
+							</li>
+				</ul>
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 14 Jun 2008 20:09:59 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.0</a>
+	</p>
+	</div></body>
+</html>

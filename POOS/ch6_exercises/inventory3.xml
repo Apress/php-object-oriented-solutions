@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<inventory xmlns:pos="http://foundationphp.com/ns/pos/">
+  <book pos:isbn13='978-1-43021-011-5'>
+    <title>PHP Object-Oriented Solutions</title>
+	<author>David Powers</author>
+	<publisher>friends of ED</publisher>
+	<description>A gentle introduction to Object-Oriented Programming (OOP) with PHP that won't overburden you with complex theory.</description>
+  </book>
+  <book pos:isbn13='978-1-59059-819-1'>
+    <title>Pro PHP: Patterns, Frameworks, Testing and More</title>
+	<author>Kevin McArthur</author>
+	<publisher>Apress</publisher>
+	<description>Written for readers seeking to take their understanding of both PHP and sound software development practices to the next level.</description>
+  </book>
+  <book pos:isbn13="978-1-43020-991-1">
+    <title>Foundation Web Standards: Design with CSS, XHTML, and AJAX</title>
+	<author>Lynn Kyle</author>
+	<author>Jonathan Lane</author>
+	<author>Joe Lewis</author>
+	<author>Steve Smith</author>
+	<publisher>friends of ED</publisher>
+	<description>Introduces the key concepts and duties performed by every member of a web development team, and gives you the skills necessary to tackle projects like a professional.</description>
+  </book>
+  <book pos:isbn13="978-1-59059-906-8">
+    <title>Practical Web 2.0 Applications with PHP</title>
+	<author>Quentin Zervaas</author>
+	<publisher>Apress</publisher>
+	<description>PHP, MySQL, CSS, XHTML, and JavaScript/Ajax development techniques are brought together to show you how to create the hottest PHP web applications, from planning and design up to final implementation.</description>
+  </book>
+  <book pos:isbn13="978-1-59059-950-1">
+    <title>The Essential Guide to Flex 3</title>
+	<author>Charles E. Brown</author>
+	<publisher>friends of ED</publisher>
+	<description>No matter what level you were to start with, by the end of the book you'll be creating powerful Flex applications—the revolution starts here!</description>
+  </book>
+  <book pos:isbn13="978-1-59059-936-5">
+    <title>Creating Mashups with Adobe Flex and AIR</title>
+	<author>John Crosby</author>
+	<author>David Hassoun</author>
+	<author>Chris Korhonen</author>
+	<publisher>friends of ED</publisher>
+	<description>Learn how to create mashup applications from the vast array of web services, feeds, and APIs using Adobe Flash and Flex together with HTML and JavaScript (Ajax).</description>
+  </book>
+</inventory>

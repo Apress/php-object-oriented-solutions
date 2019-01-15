@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Pos_Validator</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Pos_Validator</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A class for validating and filtering user input</p>
+<p class="description"><p>This class acts as a wrapper for the filter functions in &gt;= PHP 5.2 or PECL.  If an optional array of required items is passed to the class constructor,  the Pos_Validator object generates an array of missing items.</p><p>The first argument for each validation method is the name of the input  field or URL variable, which is always required. Many methods accept  optional extra arguments, for example to set a range of acceptable  numbers, or to toggle between filtering single items (scalar values)  and arrays. Apart from checkTextLength(), only one test can be applied  to each field. If multiple tests are applied, the class throws an  exception identifying duplicates.</p><p>The validateInput() method returns an array of filtered input. It also generates  an array containing the names of fields that fail validation. A noFilter() method  handles fields that do not require filtering or that require special treatment.</p><p>The PHP filter functions automatically strip &quot;magic quotes&quot; from form and  URL values, so filtered values need to be handled appropriately before display  in a web page or insertion into a database (for example, by using htmlentities()  or mysql_real_escape_string()).</p><p>Separate instances of the validator need to be created for the $_POST and $_GET  arrays, since the PHP filter functions cannot yet handle the $_REQUEST array.</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> David Powers</li>
+				<li><span class="field">version:</span> 1.0.1</li>
+				<li><span class="field">copyright:</span> David Powers 2008</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Validator.php.html">/Validator.php</a> (line <span class="field">34</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_booleans" title="details" class="var-name">$_booleans</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_errors" title="details" class="var-name">$_errors</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_filterArgs" title="details" class="var-name">$_filterArgs</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_filtered" title="details" class="var-name">$_filtered</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">int</span>
+					<a href="#$_inputType" title="details" class="var-name">$_inputType</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_missing" title="details" class="var-name">$_missing</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_required" title="details" class="var-name">$_required</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_submitted" title="details" class="var-name">$_submitted</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																								<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result"><a href="../Pos/Pos_Validator.html">Pos_Validator</a></span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$required</span> = <span class="var-default">array()</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$inputType</span> = <span class="var-default">'post'</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#checkDuplicateFilter" title="details" class="method-name">checkDuplicateFilter</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#checkRequired" title="details" class="method-name">checkRequired</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#checkTextLength" title="details" class="method-name">checkTextLength</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$min</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$max</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#getErrors" title="details" class="method-name">getErrors</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#getFiltered" title="details" class="method-name">getFiltered</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#getMissing" title="details" class="method-name">getMissing</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#isBool" title="details" class="method-name">isBool</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$nullOnFailure</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#isEmail" title="details" class="method-name">isEmail</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#isFloat" title="details" class="method-name">isFloat</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$decimalPoint</span> = <span class="var-default">'.'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allowThousandSeparator</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#isFullURL" title="details" class="method-name">isFullURL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$queryStringRequired</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#isInt" title="details" class="method-name">isInt</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$min</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$max</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#isNumericArray" title="details" class="method-name">isNumericArray</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allowDecimalFractions</span> = <span class="var-default">true</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$decimalPoint</span> = <span class="var-default">'.'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allowThousandSeparator</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#isURL" title="details" class="method-name">isURL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$queryStringRequired</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#matches" title="details" class="method-name">matches</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pattern</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#noFilter" title="details" class="method-name">noFilter</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isArray</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeAmp</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#removeTags" title="details" class="method-name">removeTags</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeAmp</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$preserveQuotes</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeLow</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeHigh</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$stripLow</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$stripHigh</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#removeTagsFromArray" title="details" class="method-name">removeTagsFromArray</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeAmp</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$preserveQuotes</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeLow</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeHigh</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$stripLow</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$stripHigh</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setInputType" title="details" class="method-name">setInputType</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#useEntities" title="details" class="method-name">useEntities</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isArray</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeHigh</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$stripLow</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$stripHigh</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">array</span>
+										<a href="#validateInput" title="details" class="method-name">validateInput</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_booleans" id="$_booleans"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_booleans</span>
+						(line <span class="line-number">75</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores an array of fields that are being checked for a Boolean value (true or false).</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_errors" id="$_errors"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_errors</span>
+						(line <span class="line-number">67</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores an associative array of error messages.</p>
+<p class="description"><p>The key (index) of each array element is the name of the field that failed validation.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_filterArgs" id="$_filterArgs"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_filterArgs</span>
+						(line <span class="line-number">71</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores a multidimensional array of filter constants and flags to be applied to each field.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_filtered" id="$_filtered"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_filtered</span>
+						(line <span class="line-number">57</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores the filtered output.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_inputType" id="$_inputType"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$_inputType</span>
+						(line <span class="line-number">41</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores the source of input variables as a filter constant (INPUT_POST or INPUT_GET).</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_missing" id="$_missing"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_missing</span>
+						(line <span class="line-number">61</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores an indexed array of required fields that have not been filled in.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_required" id="$_required"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_required</span>
+						(line <span class="line-number">53</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores an array of required fields.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_submitted" id="$_submitted"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_submitted</span>
+						(line <span class="line-number">49</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores the raw input array.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">93</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructs a validator object for $_POST or $_GET input.</p>
+<p class="description"><p>The constructor checks the availability of the PHP filter functions for which it  acts as a wrapper. If the optional first argument (an array of required fields) is  supplied, it checks that each one contains at least some input. Any missing items are  stored as an array in the $missing property.</p><p>By default, the constructor sets the input type to &quot;post&quot;. To create a validator for  the $_GET array, set the optional second argument to &quot;get&quot;.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> object</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Pos/Pos_Validator.html">Pos_Validator</a></span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$required</span> = <span class="var-default">array()</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$inputType</span> = <span class="var-default">'post'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$required</span><span class="var-description">: Optional array containing the names of required fields or URL variables.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$inputType</span><span class="var-description">: Type of input; valid options: &quot;post&quot; and &quot;get&quot; (case-insensitive); defaults to &quot;post&quot;</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheckDuplicateFilter" id="checkDuplicateFilter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">checkDuplicateFilter</span> (line <span class="line-number">649</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Throws an exception if more than one validation test is applied to the current item.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			checkDuplicateFilter
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: Name of field being validated</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheckRequired" id="checkRequired"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">checkRequired</span> (line <span class="line-number">632</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks the submitted value of all required items to ensure that the field isn't  blank.</p>
+<p class="description"><p>If the item is a scalar (single) value, whitespace is stripped from both  ends to prevent users from entering a series of spaces. Populates the $_missing  property with the names of missing fields or variables.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			checkRequired
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcheckTextLength" id="checkTextLength"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">checkTextLength</span> (line <span class="line-number">454</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks the number of characters in the submitted value.</p>
+<p class="description"><p>The first two arguments are required: the name of the form field or URL variable,  and the minimum acceptable length. The optional third argument sets a maximum length.  To set a maximum with no minimum, set the second argument to 0.</p><p>This is the only test that can be applied to input in addition to another. It should  always be used in conjunction with one of the other tests, as it doesn't sanitize the  input or remove magic quotes. Since all input is regarded as strings, further tests  might be necessary if you want to limit input to a particular type.</p><p>If the submitted data falls outside the specified range, an error message is added to  the validator's $_errors property.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			checkTextLength
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$min</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$max</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: Name of submitted value to be checked</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$min</span><span class="var-description">: Minimum number of characters expected</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$max</span><span class="var-description">: Optional; sets the maximum number of characters permitted</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetErrors" id="getErrors"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getErrors</span> (line <span class="line-number">593</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns an array containing the names of fields or variables that failed  the validation test.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Indexed array of fields (variables) that failed validation</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getErrors
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetFiltered" id="getFiltered"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getFiltered</span> (line <span class="line-number">582</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns an array of the filtered data after validation.</p>
+<p class="description"><p>This is provided as a way of accessing the validated input without  the need to process it again.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Multidimensional associative array of field (variable) names and filtered values</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getFiltered
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMissing" id="getMissing"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMissing</span> (line <span class="line-number">569</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns an array of required items that have not been filled in</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Indexed array of names of missing fields or variables.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getMissing
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisBool" id="isBool"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isBool</span> (line <span class="line-number">278</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether the submitted value is a boolean.</p>
+<p class="description"><p>The following are treated as TRUE: &quot;1&quot;, &quot;true&quot;, &quot;on&quot; and &quot;yes&quot;.  Everything else is treated as FALSE.</p><p>The optional second argument applies a stricter interpretation of  FALSE, treating only &quot;0&quot;, &quot;false&quot;, &quot;off&quot;, &quot;no&quot;, and an empty string  as FALSE. Any non-boolean values are returned by the filter as NULL.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			isBool
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$nullOnFailure</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: Name of submitted value to be checked.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$nullOnFailure</span><span class="var-description">: Optional; if true, applies stricter interpretation of FALSE; defaults to false.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisEmail" id="isEmail"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isEmail</span> (line <span class="line-number">216</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether the input conforms to the format of an email address.</p>
+<p class="description"><p>It does not check whether the address is genuine. Multiple addresses are  rejected, guarding against email header injection attacks.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			isEmail
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: Name of submitted value to be checked.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisFloat" id="isFloat"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isFloat</span> (line <span class="line-number">159</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether the submitted value is a floating point number (with or without  a decimal fraction).</p>
+<p class="description"><p>The optional second and third arguments set the decimal point to a period  and permit the use of commas as the thousands separator. To use the comma  as the decimal point, supply a comma in quotes as the second argument.  This automatically changes the thousands separator to a period.  Regardless of the type of decimal point selected, the filtered output strips  the thousands separator, and converts the decimal point to a period.</p><p>To reject numbers that contain a thousands separator, set the third argument to false.  When doing so, the second argument must be supplied, even if you want to use the  default period as the decimal point.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			isFloat
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$decimalPoint</span> = <span class="var-default">'.'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allowThousandSeparator</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: Name of submitted value to be checked.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$decimalPoint</span><span class="var-description">: Optional character to be used as decimal point; default is a period.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$allowThousandSeparator</span><span class="var-description">: Optional; default setting accepts numbers with thousands separators.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisFullURL" id="isFullURL"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isFullURL</span> (line <span class="line-number">234</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks that the input conforms to the format of a full URL, including  scheme (such as http://).</p>
+<p class="description"><p>The optional second parameter can be set to true if the URL needs  to contain a query string.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			isFullURL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$queryStringRequired</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: Name of submitted value to be checked.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$queryStringRequired</span><span class="var-description">: Optional; set to true if query string required; defaults to false.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisInt" id="isInt"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isInt</span> (line <span class="line-number">125</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks whether the submitted value is an integer.</p>
+<p class="description"><p>If supplied, the optional second and third aguments set the minimum  and/or maximum acceptable value. To set a maximum without setting a  minimum, the second argument must be explicitly set to null.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			isInt
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$min</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$max</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: Name of submitted value to be checked.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$min</span><span class="var-description">: Optional minimum acceptable number.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$max</span><span class="var-description">: Optional maximum acceptable number.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisNumericArray" id="isNumericArray"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isNumericArray</span> (line <span class="line-number">188</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Tests an array to ensure that all values are numeric.</p>
+<p class="description"><p>Since floating point numbers don't necessarily need to have a decimal fraction,  this method tests by default for floating point numbers. To test for integers,  set the optional second argument to false. The third and fourth optional  arguments set the decimal point and thousands separator in the same way as  the isFloat() method.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			isNumericArray
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allowDecimalFractions</span> = <span class="var-default">true</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$decimalPoint</span> = <span class="var-default">'.'</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allowThousandSeparator</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: Name of submitted value to be checked.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$allowDecimalFractions</span><span class="var-description">: Optional; default setting retains decimal fractions.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$decimalPoint</span><span class="var-description">: Optional character to be used as decimal point; default is a period.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$allowThousandSeparator</span><span class="var-description">: Optional; default setting accepts numbers with thousands separators.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisURL" id="isURL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isURL</span> (line <span class="line-number">254</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Validates URLs in a less strict fashion than isFullURL().</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			isURL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$queryStringRequired</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: Name of submitted value to be checked.</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$queryStringRequired</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmatches" id="matches"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">matches</span> (line <span class="line-number">298</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Matches the submitted value against a Perl-compatible regular expression.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			matches
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pattern</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: Name of submitted value to be checked.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pattern</span><span class="var-description">: Perl-compatible regular expression.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnoFilter" id="noFilter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">noFilter</span> (line <span class="line-number">498</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This passes through the raw data as submitted.</p>
+<p class="description"><p>The only changes made are the removal of magic quotes and (if the optional  third argument is set to true) the encoding of ampersands as &amp;#38;.  Use this method if none of the other methods is suitable.  From the security point of view, it is advisable to subject such data  to a custom function before use.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			noFilter
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isArray</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeAmp</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: Name of submitted value to be checked.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$isArray</span><span class="var-description">: Optional; handles an array of values if true; defaults to false.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$encodeAmp</span><span class="var-description">: Optional; converts &amp; to &amp;#38; if set to true; defaults to false.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodremoveTags" id="removeTags"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">removeTags</span> (line <span class="line-number">326</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sanitizes a string by removing completely all tags (including PHP and HTML).</p>
+<p class="description"><p>The second and third optional arguments determine whether the ampersand  and quotes are converted to numerical entitites. By default, ampersands are  not converted, but both double and single quotes are replaced by numerical  entities.</p><p>Arguments four to seven determine whether characters with an ASCII value less than 32 or  greater than 127 are encoded or stripped. By default, they are left untouched.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			removeTags
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeAmp</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$preserveQuotes</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeLow</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeHigh</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$stripLow</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$stripHigh</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: Name of submitted value to be checked.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$encodeAmp</span><span class="var-description">: Optional; converts &amp; to &amp;#38; if set to true; defaults to false.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$preserveQuotes</span><span class="var-description">: Optional; preserves double and single quotes if true; defaults to false.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$encodeLow</span><span class="var-description">: Optional; converts ASCII values below 32 to entities; defaults to false.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$encodeHigh</span><span class="var-description">: Optional; converts ASCII values above 127 to entities; defaults to false.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$stripLow</span><span class="var-description">: Optional; strips ASCII values below 32; defaults to false.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$stripHigh</span><span class="var-description">: Optional; strips ASCII values above 127; defaults to false.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodremoveTagsFromArray" id="removeTagsFromArray"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">removeTagsFromArray</span> (line <span class="line-number">373</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sanitizes array by removing completely all tags (including PHP and HTML).</p>
+<p class="description"><p>The second and third optional arguments determine whether the ampersand  and quotes are converted to numerical entitites. By default, ampersands are  not converted, but both double and single quotes are replaced by numerical  entities.</p><p>Arguments four to seven determine whether characters with an ASCII value less than 32 or  greater than 127 are encoded or stripped. By default, they are left untouched.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			removeTagsFromArray
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeAmp</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$preserveQuotes</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeLow</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeHigh</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$stripLow</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$stripHigh</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: Name of submitted value to be checked.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$encodeAmp</span><span class="var-description">: Optional; converts &amp; to &amp;#38; if set to true; defaults to false.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$preserveQuotes</span><span class="var-description">: Optional; preserves double and single quotes if true; defaults to false.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$encodeLow</span><span class="var-description">: Optional; converts ASCII values below 32 to entities; defaults to false.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$encodeHigh</span><span class="var-description">: Optional; converts ASCII values above 127 to entities; defaults to false.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$stripLow</span><span class="var-description">: Optional; strips ASCII values below 32; defaults to false.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$stripHigh</span><span class="var-description">: Optional; strips ASCII values above 127; defaults to false.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetInputType" id="setInputType"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setInputType</span> (line <span class="line-number">608</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks the input type, and assigns the appropriate superglobal array to the submitted property.</p>
+<p class="description"><p>Uses the PHP constants defined by the filter functions.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setInputType
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: Specifies the input type to be processed; valid values: &quot;post&quot; and &quot;get&quot; (case-insensitive)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoduseEntities" id="useEntities"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">useEntities</span> (line <span class="line-number">414</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sanitizes input by converting to numeric entities single and double quotes, &lt;, &gt;, &amp;, and  characters with an ASCII value of less than 32.</p>
+<p class="description"><p>Optional arguments accept an array, convert characters with an ASCII value greater than  127, or strip characters with an ASCII value less than 32 or greater than 127.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			useEntities
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$fieldName</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$isArray</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$encodeHigh</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$stripLow</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$stripHigh</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$fieldName</span><span class="var-description">: Name of submitted value to be checked.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$isArray</span><span class="var-description">: Optional; validates an array of strings if true; defaults to false.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$encodeHigh</span><span class="var-description">: Optional; converts ASCII values above 127 to entities; defaults to false.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$stripLow</span><span class="var-description">: Optional; strips ASCII values below 32; defaults to false.</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$stripHigh</span><span class="var-description">: Optional; strips ASCII values above 127; defaults to false.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodvalidateInput" id="validateInput"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">validateInput</span> (line <span class="line-number">530</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Performs the actual validation and filtering of input.</p>
+<p class="description"><p>This method checks that a validation test has been applied to each required  input field or URL variable, and throws an exception if any required data has  not been filtered, so it must come after the individual tests have been applied.</p><p>It returns an array of filtered data, which should be used instead  of the raw data from the $_POST or $_GET array. It also creates an array of  any errors encountered in the validation process.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Associative array of filtered input data</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			validateInput
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 14 Jun 2008 20:09:58 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.0</a>
+	</p>
+	</div></body>
+</html>

@@ -1,0 +1,2 @@
+This is dummyfile2.txt.
+It doesn't contain anything of interest either.

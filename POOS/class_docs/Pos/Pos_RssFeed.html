@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Pos_RssFeed</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Pos_RssFeed</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A class for generating an RSS 2.0 feed from a MySQL database query.</p>
+<p class="description"><p>Generates the RSS feed from a SQL query, and outputs it either to a file  or ready to send in response to a request.</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> David Powers</li>
+				<li><span class="field">version:</span> 1.0.0</li>
+				<li><span class="field">copyright:</span> David Powers 2008</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_RssFeed.php.html">/RssFeed.php</a> (line <span class="field">16</span>)
+		</p>
+		
+				
+		<pre><a href="../Pos/Pos_XmlExporter.html">Pos_XmlExporter</a>
+   |
+   --Pos_RssFeed</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_feedDescription" title="details" class="var-name">$_feedDescription</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_feedLink" title="details" class="var-name">$_feedLink</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_feedTitle" title="details" class="var-name">$_feedTitle</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_itemArray" title="details" class="var-name">$_itemArray</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_itemLink" title="details" class="var-name">$_itemLink</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$_itemPubDate" title="details" class="var-name">$_itemPubDate</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">int</span>
+					<a href="#$_maxRecords" title="details" class="var-name">$_maxRecords</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">int</span>
+					<a href="#$_numSentences" title="details" class="var-name">$_numSentences</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">bool</span>
+					<a href="#$_useNow" title="details" class="var-name">$_useNow</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">bool</span>
+					<a href="#$_useURL" title="details" class="var-name">$_useURL</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#buildSQL" title="details" class="method-name">buildSQL</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">int|string</span>
+										<a href="#generateXML" title="details" class="method-name">generateXML</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getTimezoneOffset" title="details" class="method-name">getTimezoneOffset</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pubDate</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setFeedDescription" title="details" class="method-name">setFeedDescription</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$description</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setFeedLink" title="details" class="method-name">setFeedLink</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$link</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setFeedTitle" title="details" class="method-name">setFeedTitle</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setItemDescription" title="details" class="method-name">setItemDescription</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$columnName</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$numSentences</span> = <span class="var-default">2</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setItemLink" title="details" class="method-name">setItemLink</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$columnName</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setItemLinkURL" title="details" class="method-name">setItemLinkURL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setItemPubDate" title="details" class="method-name">setItemPubDate</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$columnName</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">'MySQL'</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setItemTitle" title="details" class="method-name">setItemTitle</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$columnName</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setLastBuildDate" title="details" class="method-name">setLastBuildDate</a>
+											([<span class="var-type">bool</span>&nbsp;<span class="var-name">$useNow</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setTable" title="details" class="method-name">setTable</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$tableName</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$maxRecords</span> = <span class="var-default">15</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#usePrimaryKey" title="details" class="method-name">usePrimaryKey</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_feedDescription" id="$_feedDescription"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_feedDescription</span>
+						(line <span class="line-number">32</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores the RSS feed's channel description.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> Stores the RSS feed's channel title.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_feedLink" id="$_feedLink"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_feedLink</span>
+						(line <span class="line-number">28</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores the RSS feed's channel link.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> Stores the RSS feed's channel title.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_feedTitle" id="$_feedTitle"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_feedTitle</span>
+						(line <span class="line-number">24</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Stores the RSS feed's channel title.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_itemArray" id="$_itemArray"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_itemArray</span>
+						(line <span class="line-number">45</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Maps database column names to RSS 2.0 item elements.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_itemLink" id="$_itemLink"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_itemLink</span>
+						(line <span class="line-number">69</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores URL and query string for link elements.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_itemPubDate" id="$_itemPubDate"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_itemPubDate</span>
+						(line <span class="line-number">63</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Stores the database column name for pubDate.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_maxRecords" id="$_maxRecords"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$_maxRecords</span>
+						(line <span class="line-number">57</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Maximum number of records to be used as item elements in the RSS feed.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_numSentences" id="$_numSentences"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$_numSentences</span>
+						(line <span class="line-number">51</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Number of sentences to be extracted from beginning of text for each item's description.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_useNow" id="$_useNow"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$_useNow</span>
+						(line <span class="line-number">39</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Specifies whether to use current date and time for lastBuildDate.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_useURL" id="$_useURL"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$_useURL</span>
+						(line <span class="line-number">75</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Specifies whether to build URL dynamically or use URL stored in database.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../Pos/Pos_XmlExporter.html">Pos_XmlExporter</a></span></p>
+					<blockquote>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Pos/Pos_XmlExporter.html#var$_dbLink">Pos_XmlExporter::$_dbLink</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Pos/Pos_XmlExporter.html#var$_docRoot">Pos_XmlExporter::$_docRoot</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Pos/Pos_XmlExporter.html#var$_element">Pos_XmlExporter::$_element</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Pos/Pos_XmlExporter.html#var$_indent">Pos_XmlExporter::$_indent</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Pos/Pos_XmlExporter.html#var$_indentString">Pos_XmlExporter::$_indentString</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Pos/Pos_XmlExporter.html#var$_primaryKey">Pos_XmlExporter::$_primaryKey</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Pos/Pos_XmlExporter.html#var$_sql">Pos_XmlExporter::$_sql</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../Pos/Pos_XmlExporter.html#var$_xmlFile">Pos_XmlExporter::$_xmlFile</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodbuildSQL" id="buildSQL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">buildSQL</span> (line <span class="line-number">321</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Builds the SQL query to retrieve the data for the item elements of the RSS feed.</p>
+<p class="description"><p>This method loops through the $_itemArray property mapping each column name to the  appropriate item element as an alias.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			buildSQL
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgenerateXML" id="generateXML"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">generateXML</span> (line <span class="line-number">248</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Generates the RSS 2.0 feed and saves it to a file or outputs as a string.</p>
+<p class="description"><p>Must be called after all other options have been set.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> If RSS feed written to file, returns number of bytes; otherwise returns feed as string.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int|string</span>
+		<span class="method-name">
+			generateXML
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Pos/Pos_XmlExporter.html#methodgenerateXML">Pos_XmlExporter::generateXML()</a></dt>
+						<dd>Implements the options set by other methods, and generates the XML output.</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetTimezoneOffset" id="getTimezoneOffset"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getTimezoneOffset</span> (line <span class="line-number">354</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add the time zone offset to the pubDate element.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Date and time formatted as RFC 822 with time zone offset.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getTimezoneOffset
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pubDate</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pubDate</span><span class="var-description">: Date and time formatted as RFC 822 minus the time zone offset.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetFeedDescription" id="setFeedDescription"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setFeedDescription</span> (line <span class="line-number">102</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the description element for the RSS channel.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setFeedDescription
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$description</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$description</span><span class="var-description">: Brief description of the feed.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetFeedLink" id="setFeedLink"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setFeedLink</span> (line <span class="line-number">92</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the URL for the RSS channel.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setFeedLink
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$link</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$link</span><span class="var-description">: Channel URL.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetFeedTitle" id="setFeedTitle"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setFeedTitle</span> (line <span class="line-number">82</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the title for the RSS channel.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setFeedTitle
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$title</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$title</span><span class="var-description">: Channel title.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetItemDescription" id="setItemDescription"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setItemDescription</span> (line <span class="line-number">141</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the database column and number of sentences for each item's description.</p>
+<p class="description"><p>The second argument specifies the number of sentences to be extracted from the  beginning of the text stored in the database. Its use is optional. If not set,  it defaults to 2. If set to 0, the whole text is used.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setItemDescription
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$columnName</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$numSentences</span> = <span class="var-default">2</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$columnName</span><span class="var-description">: Name of database column to use for item descriptions.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$numSentences</span><span class="var-description">: Number of sentences to use; default 2; if set to 0, all text is used.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetItemLink" id="setItemLink"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setItemLink</span> (line <span class="line-number">177</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the database column to use for each item's link element.</p>
+<p class="description"><p>This method should be used when the actual URL is stored in the database. It  is mutually incompatible with setItemLinkURL(), and throws an exception if  both methods are used in the same script.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setItemLink
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$columnName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$columnName</span><span class="var-description">: Name of database column to use for each item's link element.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetItemLinkURL" id="setItemLinkURL"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setItemLinkURL</span> (line <span class="line-number">200</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the URL to be used for dynamic display of each item.</p>
+<p class="description"><p>This method builds the URL for each item's link element by querying the  database to find the table's primary key. It then generates a query string  and adds it to the base URL supplied as an argument to the method.</p><p>It is mutually incompatible with setItemLink(), and throws and exception if  both methods are used in the same script.</p><p>Must be called after the setTable() method.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setItemLinkURL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$url</span><span class="var-description">: Base URL for dynamic display of item.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetItemPubDate" id="setItemPubDate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setItemPubDate</span> (line <span class="line-number">157</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the database column and type for each item's pubDate.</p>
+<p class="description"><p>The second argument specifies whether the date is stored as a MySQL or Unix timestamp.  Its use is optional. If not set, the default is MySQL. Any other value converts the  date and time from a Unix timestamp.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setItemPubDate
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$columnName</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">'MySQL'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$columnName</span><span class="var-description">: Name of database column to use for item pubDate elements.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: Storage type; default is MySQL format; any other value assumes Unix timestamp.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetItemTitle" id="setItemTitle"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setItemTitle</span> (line <span class="line-number">126</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the database column to be used for the title of each feed item.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setItemTitle
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$columnName</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$columnName</span><span class="var-description">: Name of database column to use for item titles.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetLastBuildDate" id="setLastBuildDate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setLastBuildDate</span> (line <span class="line-number">116</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets whether to use the current date and time for the channel's lastBuildDate element.</p>
+<p class="description"><p>The default is to use the current date and time for the lastBuildDate  element. If the argument passed to this method is false, the most  recent pubDate from among the feed's item elements is used instead.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setLastBuildDate
+		</span>
+					([<span class="var-type">bool</span>&nbsp;<span class="var-name">$useNow</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$useNow</span><span class="var-description">: Defaults to true and uses current date and time for lastBuildDate.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetTable" id="setTable"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setTable</span> (line <span class="line-number">235</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the table from which feed data is to be drawn and maximum number of items.</p>
+<p class="description"><p>Second argument sets the maximum number of items. Its use is optional, and defaults  to 15. If set to 0, all items in the database are used.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setTable
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$tableName</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$maxRecords</span> = <span class="var-default">15</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tableName</span><span class="var-description">: Name of database table that contains feed data.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$maxRecords</span><span class="var-description">: Maximum number of items; default 15; if set to 0, all items retrieved.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodusePrimaryKey" id="usePrimaryKey"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">usePrimaryKey</span> (line <span class="line-number">223</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Dummy method to override the inherited method and prevent its use.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			usePrimaryKey
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Pos/Pos_XmlExporter.html#methodusePrimaryKey">Pos_XmlExporter::usePrimaryKey()</a></dt>
+						<dd>Sets the name of the table from which the primary key is to be used as an attribute  in the opening tag of each top-level node.</dd>
+					</dl>
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../Pos/Pos_XmlExporter.html">Pos_XmlExporter</a></span></p>
+					<blockquote>
+													<img src="../media/images/Constructor.png" alt=" "/>
+							<span class="method-name"><a href="../Pos/Pos_XmlExporter.html#method__construct">Pos_XmlExporter::__construct()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Pos/Pos_XmlExporter.html#methodcheckValidName">Pos_XmlExporter::checkValidName()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Pos/Pos_XmlExporter.html#methodgenerateXML">Pos_XmlExporter::generateXML()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Pos/Pos_XmlExporter.html#methodsetFilePath">Pos_XmlExporter::setFilePath()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Pos/Pos_XmlExporter.html#methodsetQuery">Pos_XmlExporter::setQuery()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Pos/Pos_XmlExporter.html#methodsetTagNames">Pos_XmlExporter::setTagNames()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../Pos/Pos_XmlExporter.html#methodusePrimaryKey">Pos_XmlExporter::usePrimaryKey()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 14 Jun 2008 20:09:57 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.0</a>
+	</p>
+	</div></body>
+</html>
