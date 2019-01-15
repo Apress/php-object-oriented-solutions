@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Pos_Date</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Pos_Date</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-consts">Constants</a>
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A user-friendly class for handling dates.</p>
+<p class="description"><p>Extends the DateTime class in &gt;= PHP 5.2 to build and format dates without the  need to memorize PHP date format specifiers. Eliminates inaccurate results when  modifying dates to add or subtract days, weeks, months, or years.  Static dateDiff() method calculates number of days between two dates.</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> David Powers</li>
+				<li><span class="field">version:</span> 1.0.2</li>
+				<li><span class="field">copyright:</span> David Powers 2008</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Date.php.html">/Date.php</a> (line <span class="field">15</span>)
+		</p>
+		
+				
+		<pre>DateTime
+   |
+   --Pos_Date</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-consts">Constants</a>
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																								<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">int</span>
+					<a href="#$_day" title="details" class="var-name">$_day</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">int</span>
+					<a href="#$_month" title="details" class="var-name">$_month</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">int</span>
+					<a href="#$_year" title="details" class="var-name">$_year</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-consts">Constants</a>
+							
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																												<div class="method-definition">
+					<img src="../media/images/StaticMethod.png" alt=" "/>
+											static <span class="method-result">int</span>
+										<a href="#dateDiff" title="details" class="method-name">dateDiff</a>
+											(<span class="var-type"><a href="../Pos/Pos_Date.html">Pos_Date</a></span>&nbsp;<span class="var-name">$startDate</span>, <span class="var-type"><a href="../Pos/Pos_Date.html">Pos_Date</a></span>&nbsp;<span class="var-name">$endDate</span>)
+									</div>
+																																																																																																																																																																																																																																				<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result"><a href="../Pos/Pos_Date.html">Pos_Date</a></span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">DateTimeZone</span>&nbsp;<span class="var-name">$timezone</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#addDays" title="details" class="method-name">addDays</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$numDays</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#addMonths" title="details" class="method-name">addMonths</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$numMonths</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#addWeeks" title="details" class="method-name">addWeeks</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$numWeeks</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#addYears" title="details" class="method-name">addYears</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$numYears</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#checkLastDayOfMonth" title="details" class="method-name">checkLastDayOfMonth</a>
+										()
+									</div>
+																								<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">int</span>
+										<a href="#dateDiff2" title="details" class="method-name">dateDiff2</a>
+											(<span class="var-type"><a href="../Pos/Pos_Date.html">Pos_Date</a></span>&nbsp;<span class="var-name">$endDate</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">int|string</span>
+										<a href="#getDay" title="details" class="method-name">getDay</a>
+											([<span class="var-type">bool</span>&nbsp;<span class="var-name">$leadingZero</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getDayAbbr" title="details" class="method-name">getDayAbbr</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getDayName" title="details" class="method-name">getDayName</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getDayOrdinal" title="details" class="method-name">getDayOrdinal</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getDMY" title="details" class="method-name">getDMY</a>
+											([<span class="var-type">bool</span>&nbsp;<span class="var-name">$leadingZeros</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">int</span>
+										<a href="#getFullYear" title="details" class="method-name">getFullYear</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getMDY" title="details" class="method-name">getMDY</a>
+											([<span class="var-type">bool</span>&nbsp;<span class="var-name">$leadingZeros</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">int|string</span>
+										<a href="#getMonth" title="details" class="method-name">getMonth</a>
+											([<span class="var-type">bool</span>&nbsp;<span class="var-name">$leadingZero</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getMonthAbbr" title="details" class="method-name">getMonthAbbr</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getMonthName" title="details" class="method-name">getMonthName</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getMySQLFormat" title="details" class="method-name">getMySQLFormat</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getYear" title="details" class="method-name">getYear</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#isLeap" title="details" class="method-name">isLeap</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#modify" title="details" class="method-name">modify</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setDate" title="details" class="method-name">setDate</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$year</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$month</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$day</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setDMY" title="details" class="method-name">setDMY</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$EuroDate</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setFromMySQL" title="details" class="method-name">setFromMySQL</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$MySQLDate</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setMDY" title="details" class="method-name">setMDY</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$USDate</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setTime" title="details" class="method-name">setTime</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$hours</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$minutes</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$seconds</span> = <span class="var-default">0</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#subDays" title="details" class="method-name">subDays</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$numDays</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#subMonths" title="details" class="method-name">subMonths</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$numMonths</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#subWeeks" title="details" class="method-name">subWeeks</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$numWeeks</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#subYears" title="details" class="method-name">subYears</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$numYears</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#__get" title="details" class="method-name">__get</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#__toString" title="details" class="method-name">__toString</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-consts">Constants</a>
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_day" id="$_day"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$_day</span>
+						(line <span class="line-number">31</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Day of month (no leading zero).</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_month" id="$_month"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$_month</span>
+						(line <span class="line-number">27</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Month number (no leading zero).</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_year" id="$_year"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$_year</span>
+						(line <span class="line-number">23</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Year as four-digit number.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methoddateDiff" id="dateDiff"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/StaticMethod.png" />
+		<span class="method-title">static dateDiff</span> (line <span class="line-number">44</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Static method to calculate the number of days between two dates.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Number of days between start and end dates.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			dateDiff
+		</span>
+					(<span class="var-type"><a href="../Pos/Pos_Date.html">Pos_Date</a></span>&nbsp;<span class="var-name">$startDate</span>, <span class="var-type"><a href="../Pos/Pos_Date.html">Pos_Date</a></span>&nbsp;<span class="var-name">$endDate</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Pos/Pos_Date.html">Pos_Date</a></span>
+				<span class="var-name">$startDate</span><span class="var-description">: Starting date.</span>			</li>
+					<li>
+				<span class="var-type"><a href="../Pos/Pos_Date.html">Pos_Date</a></span>
+				<span class="var-name">$endDate</span><span class="var-description">: Finishing date.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">63</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor method.</p>
+<p class="description"><p>The constructor overrides the PHP DateTime class and sets the value  of the internal properties. Creates an object for the current date  and time only, but accepts an optional argument to set the time zone.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Pos/Pos_Date.html">Pos_Date</a></span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">DateTimeZone</span>&nbsp;<span class="var-name">$timezone</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">DateTimeZone</span>
+				<span class="var-name">$timezone</span><span class="var-description">: string Optional DateTimeZone object.</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt>DateTime::constructor __construct (  )</dt>
+					</dl>
+			
+	</div>
+<a name="methodaddDays" id="addDays"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">addDays</span> (line <span class="line-number">340</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add specified number of days to stored date.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addDays
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$numDays</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$numDays</span><span class="var-description">: Number of days to be added, must be positive.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddMonths" id="addMonths"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">addMonths</span> (line <span class="line-number">400</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add specified number of months to date.</p>
+<p class="description"><p>This method adjusts the result to the final day of the month if  the resulting date is invalid, e.g., September 31 is converted  to September 30. Results in February also take account of leap  year. This contrasts with DateTime::modify() and strtotime, which  produce unexpected results by adding the day(s).</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addMonths
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$numMonths</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$numMonths</span><span class="var-description">: Number of months to be added.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddWeeks" id="addWeeks"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">addWeeks</span> (line <span class="line-number">367</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add specified number of weeks to date.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addWeeks
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$numWeeks</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$numWeeks</span><span class="var-description">: Number of weeks to be added, must be positive.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddYears" id="addYears"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">addYears</span> (line <span class="line-number">486</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add specified number of years to date.</p>
+<p class="description"><p>Adding years to February 29 can produce an invalid date if  the resulting year is not a leap year. This method takes  this into account, and adjusts the result to February 28  if necessary</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addYears
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$numYears</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$numYears</span><span class="var-description">: Number of years to be added.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheckLastDayOfMonth" id="checkLastDayOfMonth"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">checkLastDayOfMonth</span> (line <span class="line-number">634</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adjusts the day to the last day of the month when necessary.</p>
+<p class="description"><p>This internal method is called by addMonths(), subMonths(),  addYears(), and subYears(). It checks whether the date calculation  results in an invalid date, such as February 31. If the date is  invalid, it readjusts the $_day property to the last day of  the month.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			checkLastDayOfMonth
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddateDiff2" id="dateDiff2"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">dateDiff2</span> (line <span class="line-number">537</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Calculates the number of days between two dates.</p>
+<p class="description"><p>This differs from the static method in that it takes just one  argument. The start date is the object that calls the method,  and the end date is passed to it as an argument.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Number of days between both dates.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			dateDiff2
+		</span>
+					(<span class="var-type"><a href="../Pos/Pos_Date.html">Pos_Date</a></span>&nbsp;<span class="var-name">$endDate</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Pos/Pos_Date.html">Pos_Date</a></span>
+				<span class="var-name">$endDate</span><span class="var-description">: Date that is to be compared with object.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetDay" id="getDay"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getDay</span> (line <span class="line-number">301</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get day with or without leading zero.</p>
+<p class="description"><p>Optional Boolean argument adds leading zero if true. Defaults to false.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Day.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int|string</span>
+		<span class="method-name">
+			getDay
+		</span>
+					([<span class="var-type">bool</span>&nbsp;<span class="var-name">$leadingZero</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$leadingZero</span><span class="var-description">: (Optional) adds leading zero if true; default false.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetDayAbbr" id="getDayAbbr"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getDayAbbr</span> (line <span class="line-number">328</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get day name as abbreviation.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Abbreviated day name.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getDayAbbr
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetDayName" id="getDayName"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getDayName</span> (line <span class="line-number">319</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get day name in full.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Full day name.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getDayName
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetDayOrdinal" id="getDayOrdinal"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getDayOrdinal</span> (line <span class="line-number">310</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get day number as English ordinal (1st, 2nd, etc.)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Day number as ordinal</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getDayOrdinal
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetDMY" id="getDMY"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getDMY</span> (line <span class="line-number">225</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get date formatted as DD/MM/YYYY.</p>
+<p class="description"><p>Accepts an optional Boolean argument that determines whether to format  the month and day with leading zeros. Defaults to false.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Date formatted as MM/DD/YYYY.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getDMY
+		</span>
+					([<span class="var-type">bool</span>&nbsp;<span class="var-name">$leadingZeros</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$leadingZeros</span><span class="var-description">: (Optional) adds leading zeros if true; default false.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetFullYear" id="getFullYear"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getFullYear</span> (line <span class="line-number">250</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get year as four-digit number.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Year as four-digit number</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getFullYear
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMDY" id="getMDY"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMDY</span> (line <span class="line-number">208</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get date formatted as MM/DD/YYYY.</p>
+<p class="description"><p>Accepts an optional Boolean argument that determines whether to format  the month and day with leading zeros. Defaults to false.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Date formatted as MM/DD/YYYY.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getMDY
+		</span>
+					([<span class="var-type">bool</span>&nbsp;<span class="var-name">$leadingZeros</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$leadingZeros</span><span class="var-description">: (Optional) adds leading zeros if true; default false.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMonth" id="getMonth"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMonth</span> (line <span class="line-number">271</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get month with or without leading zero.</p>
+<p class="description"><p>Optional Boolean argument adds leading zero if true. Defaults to false.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Month.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int|string</span>
+		<span class="method-name">
+			getMonth
+		</span>
+					([<span class="var-type">bool</span>&nbsp;<span class="var-name">$leadingZero</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$leadingZero</span><span class="var-description">: (Optional) adds leading zero if true; default false.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetMonthAbbr" id="getMonthAbbr"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMonthAbbr</span> (line <span class="line-number">289</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get month name as three-letter abbreviation.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Abbreviated month name.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getMonthAbbr
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMonthName" id="getMonthName"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMonthName</span> (line <span class="line-number">280</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get month name in full.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Month name in full.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getMonthName
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMySQLFormat" id="getMySQLFormat"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getMySQLFormat</span> (line <span class="line-number">238</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets date formatted as YYYY-MM-DD.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Date formatted as YYYY-MM-DD.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getMySQLFormat
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetYear" id="getYear"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getYear</span> (line <span class="line-number">259</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get year as two-digit number.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Year as two-digit number</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getYear
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisLeap" id="isLeap"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">isLeap</span> (line <span class="line-number">519</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Determines whether the year is a leap year.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True if it is a leap year, otherwise false.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			isLeap
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmodify" id="modify"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">modify</span> (line <span class="line-number">137</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Overrides parent modify() method and throws exception to prevent use.</p>
+<p class="description"><p>The parent method emulates strtotime(), which produces inaccurate  results if out-of-range values are used (e.g., September 31 is  converted to October 1). Throws an exception to prevent its  use as a public method.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			modify
+		</span>
+				()
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt>DateTime::modify (  )</dt>
+					</dl>
+			
+	</div>
+<a name="methodsetDate" id="setDate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setDate</span> (line <span class="line-number">116</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Changes the date represented by the object.</p>
+<p class="description"><p>Overrides the parent setDate() method, and checks  that the arguments supplied constitute a valid date.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setDate
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$year</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$month</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$day</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$year</span><span class="var-description">: The year as a four-digit number.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$month</span><span class="var-description">: The month as a number between 1 and 12.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$day</span><span class="var-description">: The day as a number between 1 and 31.</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt>DateTime::setDate (  )</dt>
+					</dl>
+			
+	</div>
+<a name="methodsetDMY" id="setDMY"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setDMY</span> (line <span class="line-number">170</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the date using input in DD/MM/YYYY format</p>
+<p class="description"><p>Separator can be any of the following: dash, forward slash, space,  colon, or period. After extracting the year, month, and day parts,  passes them to the overridden setDate() method.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setDMY
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$EuroDate</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$EuroDate</span><span class="var-description">: Date string in European DD/MM/YYYYY format.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetFromMySQL" id="setFromMySQL"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setFromMySQL</span> (line <span class="line-number">188</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the date using input in the MySQL (ISO 8601) format.</p>
+<p class="description"><p>Accepts date in the format used by MySQL.  Separator can be any of the following: dash, forward slash, space,  colon, or period. After extracting the year, month, and day parts,  passes them to the overridden setDate() method.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setFromMySQL
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$MySQLDate</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$MySQLDate</span><span class="var-description">: Date string in ISO 8601 format (YYYY-MM-DD).</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetMDY" id="setMDY"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setMDY</span> (line <span class="line-number">153</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the date using input in MM/DD/YYYY format.</p>
+<p class="description"><p>Separator can be any of the following: dash, forward slash, space,  colon, or period. After extracting the year, month, and day parts,  passes them to the overridden setDate() method.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setMDY
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$USDate</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$USDate</span><span class="var-description">: Date string in US format (MM/DD/YYYY).</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetTime" id="setTime"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setTime</span> (line <span class="line-number">86</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Resets the current time.</p>
+<p class="description"><p>This overrides the parent method to prevent out-of-range units  being accepted.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setTime
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$hours</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$minutes</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$seconds</span> = <span class="var-default">0</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$hours</span><span class="var-description">: Number between 0 and 23.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$minutes</span><span class="var-description">: Number between 0 and 59.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$seconds</span><span class="var-description">: (Optional) Number beween 0 and 59; default 0.</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt>DateTime::setTime (  )</dt>
+					</dl>
+			
+	</div>
+<a name="methodsubDays" id="subDays"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">subDays</span> (line <span class="line-number">355</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Subtract specified number of days from stored date.</p>
+<p class="description"><p>Accepts either a positive or negative number, but uses only the  absolute value.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			subDays
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$numDays</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$numDays</span><span class="var-description">: Number of days to be subtracted.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsubMonths" id="subMonths"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">subMonths</span> (line <span class="line-number">445</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Subtract specified number of months from date.</p>
+<p class="description"><p>This method adjusts the result to the final day of the month if  the resulting date is invalid, e.g., September 31 is converted  to September 30. Results in February also take account of leap  year. This contrasts with DateTime::modify() and strtotime, which  produce unexpected results by subtracting the day(s).</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			subMonths
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$numMonths</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$numMonths</span><span class="var-description">: Number of months to be subtracted.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsubWeeks" id="subWeeks"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">subWeeks</span> (line <span class="line-number">382</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Subtract specified number of weeks from date.</p>
+<p class="description"><p>Accepts either a positive or negative number, but uses only the  absolute value.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			subWeeks
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$numWeeks</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$numWeeks</span><span class="var-description">: Number of weeks to be subtracted.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsubYears" id="subYears"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">subYears</span> (line <span class="line-number">505</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Subtract specified number of years from date.</p>
+<p class="description"><p>Subtracting years from February 29 can produce an invalid date if  the resulting year is not a leap year. This method takes  this into account, and adjusts the result to February 28  if necessary</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			subYears
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$numYears</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$numYears</span><span class="var-description">: Number of years to be subtracted.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method__get" id="__get"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">__get</span> (line <span class="line-number">583</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Output date parts as read-only properties.</p>
+<p class="description"><p>Uses __get() magic method to create the following read-only  properties, all of which are case-insensitive:</p><p><ul><li>MDY: date formatted as MM/DD/YYYY</li><li>MDY0: date formatted as MM/DD/YYYY with leading zeros</li><li>DMY: date formatted as DD/MM/YYYY</li><li>DMY0: date formatted as DD/MM/YYYY with leading zeros</li><li>MySQL: date formatted as YYYY-MM-DD</li><li>fullYear: year as four digits</li><li>year: year as two digits</li><li>month: month number</li><li>month0: month number with leading zero</li><li>monthName: full name of month</li><li>monthAbbr: month as 3-letter abbreviation</li><li>day: day of month as number</li><li>day0: day of month as number with leading zero</li><li>dayOrdinal: day of month as ordinal number (1st, 2nd, etc.)</li><li>dayName: full weekday name</li><li>dayAbbr: weekday name as 3-letter abbreviation</li></ul>  Any other value returns &quot;Invalid property&quot;.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Formatted date or date part.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			__get
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Name of read-only property.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method__toString" id="__toString"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">__toString</span> (line <span class="line-number">551</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Outputs date as string</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> Date formatted like Saturday, March 1st, 2008</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			__toString
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname">DateTime (Internal Class)</span></p>
+					<blockquote>
+													<img src="../media/images/Constructor.png" alt=" "/>
+							<span class="method-name">constructor __construct (  )</span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name">format (  )</span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name">getOffset (  )</span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name">getTimezone (  )</span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name">modify (  )</span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name">setDate (  )</span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name">setISODate (  )</span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name">setTime (  )</span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name">setTimezone (  )</span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+										<h4>Inherited Constants</h4>
+				<A NAME='inherited_consts'><!-- --></A>
+									<p>Inherited from <span class="classname">DateTime (Internal Class)</span></p>
+					<blockquote>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name">ATOM = 'Y-m-d\\TH:i:sP'</span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name">COOKIE = 'l, d-M-y H:i:s T'</span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name">ISO8601 = 'Y-m-d\\TH:i:sO'</span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name">RFC822 = 'D, d M y H:i:s O'</span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name">RFC850 = 'l, d-M-y H:i:s T'</span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name">RFC1036 = 'D, d M y H:i:s O'</span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name">RFC1123 = 'D, d M Y H:i:s O'</span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name">RFC2822 = 'D, d M Y H:i:s O'</span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name">RFC3339 = 'Y-m-d\\TH:i:sP'</span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name">RSS = 'D, d M Y H:i:s O'</span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="const-title">
+								<span class="const-name">W3C = 'Y-m-d\\TH:i:sP'</span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<p class="notes" id="credit">
+		Documentation generated on Sat, 14 Jun 2008 20:09:53 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.0</a>
+	</p>
+	</div></body>
+</html>

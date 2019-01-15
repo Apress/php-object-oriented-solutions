@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<book isbn13="978-1-59059-819-1">
+    <title>Pro PHP: Patterns, Frameworks, Testing and More</title>
+	<author>Kevin McArthur</author>
+	<publisher>Apress</publisher>
+	<description>Written for readers seeking to take their understanding of both PHP and sound software development practices to the next level.</description>
+  </book>

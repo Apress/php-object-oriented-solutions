@@ -1,0 +1,35 @@
+<?php
+require_once '../Pos/RssFeed.php';
+require_once '../Pos/MysqlImprovedConnection.php';
+require_once '../Pos/MysqlImprovedResult.php';
+
+
+
+
+try {
+  $xml = new Pos_RssFeed('localhost', 'psadmin', 'kyoto', 'phpsolutions');
+  $xml->setFeedTitle('OOP News');
+  $xml->setFeedLink('http://www.example.com/oop_news.xml');
+  $xml->setFeedDescription('Get the lowdown on OOP and PHP.');
+  $xml->setLastBuildDate(true);
+  // $xml->setFilePath('oop_news.xml');
+  $xml->setItemTitle('title');
+  $xml->setItemDescription('article');
+  $xml->setItemPubDate('updated');
+  $xml->setTable('blog');
+  $xml->setItemLinkURL('http://www.example.com/detail.php');
+//  $xml->setItemLink('url');
+  $result = $xml->generateXML();
+  if ($result) {
+   header('Content-Type: text/xml');
+    echo $result;
+  }
+  else {
+    echo 'Error';
+  }
+}
+catch (Exception $e) {
+  echo $e->getMessage();
+}
+
+?> 

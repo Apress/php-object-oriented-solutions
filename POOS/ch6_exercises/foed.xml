@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:hr="http://www.w3.org/2000/08/w3c-synd/#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/"> 
+<channel rdf:about="http://www.friendsofed.com"> 
+
+<title>friends of ED newsfeed</title>
+<description> friendsofed.com designer to designer</description>
+<link>
+http://www.friendsofed.com
+</link>
+<items/>
+</channel>
+<item rdf:about="http://www.friendsofed.com/index.html?978"><title>Adobe TV</title>
+
+<description>Adobe TV launches today, and very useful it looks too.</description>
+
+<link>http://www.friendsofed.com/index.html?978</link>
+
+<dc:date>2008-04-09T02:03:10-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?977"><title>Time to get nekkid again</title>
+
+<description>Well it doesn't seem like 12 months since the last one, but we're getting our CSS off again for CSS Naked Day. We'll be covering ourselves up again tomorrow.</description>
+
+<link>http://www.friendsofed.com/index.html?977</link>
+
+<dc:date>2008-04-08T07:58:21-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?976"><title>Here's lookin' at you kid</title>
+
+<description>An rather unnerving mouse driven moving portrait thing at cubo.cc</description>
+
+<link>http://www.friendsofed.com/index.html?976</link>
+
+<dc:date>2008-04-03T10:38:56-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?975"><title>Join David Powers for an online Dreamweaver seminar</title>
+
+<description>foED author extraordinaire  David Powers is taking part in Adobe Developer Week this Friday, with a session sharing the name of his latest book 'The Essential Guide to Dreamweaver CS3 with CSS, Ajax, and PHP'. Register now, over at Adobe</description>
+
+<link>http://www.friendsofed.com/index.html?975</link>
+
+<dc:date>2008-03-26T03:18:30-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?974"><title>We're at SXSW</title>
+
+<description>If you're in Austin, TX for SXSW Interactive be sure to stop by and see us and Apress at our booth.</description>
+
+<link>http://www.friendsofed.com/index.html?974</link>
+
+<dc:date>2008-03-08T04:34:59-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?973"><title>Solar, with Lyrics</title>
+
+<description>We love Processing.
+We love Flight 404's Goldfrapp Video.</description>
+
+<link>http://www.friendsofed.com/index.html?973</link>
+
+<dc:date>2008-02-13T00:40:22-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?972"><title>Shake your BOTY</title>
+
+<description>It's  Netdiver Best of the Year time again. To quote, "These folks whatever their disciplines create memorable and dazzling projects, taking us to uncharted territories where imagination, skill, talent abide - inciting us to keep pushing forward."</description>
+
+<link>http://www.friendsofed.com/index.html?972</link>
+
+<dc:date>2008-02-12T06:30:16-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?971"><title>Safer Internet Day 2008</title>
+
+<description>Hey, let's be careful out there</description>
+
+<link>http://www.friendsofed.com/index.html?971</link>
+
+<dc:date>2008-02-12T01:20:21-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?970"><title>Super Tuesday</title>
+
+<description>This Tuesday is important&#8212;Use your vote! That's right, make sure you vote on Flex Feature Requests and Bugs. More here. Well, what did you think we meant?</description>
+
+<link>http://www.friendsofed.com/index.html?970</link>
+
+<dc:date>2008-02-01T11:20:51-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?969"><title>YouTube Partner Program Extended</title>
+
+<description>If you're in the US, Canada, or now the UK you can make money from posting your videos on YouTube by signing up to their Partner Program. Watch out for our forthcoming title Creating Video for the Web: Podcasts, Ads, and More if you want to learn how to do it properly.</description>
+
+<link>http://www.friendsofed.com/index.html?969</link>
+
+<dc:date>2008-01-31T07:37:48-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?968"><title>What Was Won?</title>
+
+<description>Good luck to ex-'foEDian' Catherine O'Flynn who's up for the Costa Book of the Year award this evening. Of course we knew her when she was still a web editor!</description>
+
+<link>http://www.friendsofed.com/index.html?968</link>
+
+<dc:date>2008-01-22T03:46:49-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?967"><title>FWA Awards 2007</title>
+
+<description>There's just one winner this year at FWA, with Get the Glass! winning both the Site of the Year, and the People's Choice award. Well, it had to be, didn't it?</description>
+
+<link>http://www.friendsofed.com/index.html?967</link>
+
+<dc:date>2008-01-15T02:20:42-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?966"><title>Macworld SF keynote bingo</title>
+
+<description>Mackids around the world will, as ever, be hanging on Steve Jobs' every word during the Macworld SF keynote. Why not make it more interesting, with a spot of keynote bingo. And, one more thing ...Check out MacsimumNews for some rather handy coupons to download&#8212;including one from us. Enjoy!</description>
+
+<link>http://www.friendsofed.com/index.html?966</link>
+
+<dc:date>2008-01-10T10:44:21-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?965"><title>Standards Champion</title>
+
+<description>Amongst the many other worthy winners at the .net awards this year was none other than Web Standards Solutions author, Dan Cederholm, picking up the award as Standards Champion. Better luck next time Bruce!
+
+</description>
+
+<link>http://www.friendsofed.com/index.html?965</link>
+
+<dc:date>2008-01-10T09:52:11-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?964"><title>Gimme Gimme Gimme</title>
+
+<description>Flex 3 Public Beta 3 available at labs right now! And, in case you hadn't noticed, our new Flex titles are all Flex 3 compatible.</description>
+
+<link>http://www.friendsofed.com/index.html?964</link>
+
+<dc:date>2007-12-13T04:40:20-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?963"><title>Gary's Bike Jump</title>
+
+<description>In honor of the late, great, Evel Knievel let's have a little retro Flash gaming. Time to revisit the old easter egg that was Gary's Bike Jump</description>
+
+<link>http://www.friendsofed.com/index.html?963</link>
+
+<dc:date>2007-12-01T09:27:24-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?962"><title>PHP and Apache in Leopard</title>
+
+<description>Ace author David Powers has a useful guide to getting up and running with PHP and Apache in Leopard, over at foundationphp.com</description>
+
+<link>http://www.friendsofed.com/index.html?962</link>
+
+<dc:date>2007-11-23T09:57:09-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?961"><title>How to Conquer the Web</title>
+
+<description>Inc.com features an interview with Web Design and Marketing Solutions for Business Websites' author Kevin Potts</description>
+
+<link>http://www.friendsofed.com/index.html?961</link>
+
+<dc:date>2007-11-21T04:36:21-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?960"><title>SWX for Prizes</title>
+
+<description>foED books are among the prizes on offer in Aral Balkan's SWX Contest</description>
+
+<link>http://www.friendsofed.com/index.html?960</link>
+
+<dc:date>2007-11-17T00:05:12-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?959"><title>don't touch the blue cup</title>
+
+<description>you didn't did you?</description>
+
+<link>http://www.friendsofed.com/index.html?959</link>
+
+<dc:date>2007-11-16T09:02:10-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?958"><title>Pretty in Pink</title>
+
+<description>We know we look good in pink, but the color appears to be catching on in sport too.</description>
+
+<link>http://www.friendsofed.com/index.html?958</link>
+
+<dc:date>2007-11-14T02:39:22-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?957"><title>Learn CSS from the Master[y]</title>
+
+<description>Andy Budd, author of CSS Mastery, is running a CSS workshop in Brighton, UK, in January. More details at the Clearleft website</description>
+
+<link>http://www.friendsofed.com/index.html?957</link>
+
+<dc:date>2007-11-13T09:04:57-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?956"><title>Oh I do like to be beside the seaside</title>
+
+<description>foED are heading for the beach.I hope you can join us!</description>
+
+<link>http://www.friendsofed.com/index.html?956</link>
+
+<dc:date>2007-11-02T11:07:24-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?955"><title>Bringing HD Flash Video to the Web</title>
+
+<description>Everyone's favorite Flash video author, Tom Green, has a great HD Flash video article up at Digital Web</description>
+
+<link>http://www.friendsofed.com/index.html?955</link>
+
+<dc:date>2007-10-30T02:04:37-08:00</dc:date>
+
+</item>
+
+<item rdf:about="http://www.friendsofed.com/index.html?954"><title>Leopard</title>
+
+<description>Only 10 days to go before Leopardships, and not long to wait until our Getting StartED with Mac OS X Leopard book.</description>
+
+<link>http://www.friendsofed.com/index.html?954</link>
+
+<dc:date>2007-10-16T07:13:55-08:00</dc:date>
+
+</item>
+
+
+</rdf:RDF>

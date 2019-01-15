@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<inventory>
+  <book isbn13="978-1-43020-993-5">
+    <title>The Essential Guide to Open Source Flash Development</title>
+	<author>Chris Allen</author>
+	<author>Wade Arnold</author>
+	<author>Aral Balkan</author>
+	<author>Nicolas Cannasse</author>
+	<author>John Grden</author>
+	<author>Marc Hughes</author>
+	<author>R. Jon MacDonald</author>
+	<author>Patrick Mineault</author>
+	<author>Andy Zupko</author>
+	<publisher>friends of ED</publisher>
+	<description>A practical development guide to creating Flash applications with OS Flash tools and workflows.</description>
+  </book>
+  <book isbn13='978-1-59059-862-7'>
+    <title>Beginning PHP and MySQL: From Novice to Professional, Third Edition</title>
+	<author>W. Jason Gilmore</author>
+	<publisher>Apress</publisher>
+	<description>A comprehensive introduction to two of the most prominent open source technologies on the planet: the PHP scripting language and the MySQL database server.</description>
+  </book>
+  <book isbn13='978-1-59059-858-0'>
+    <title>Pro Web 2.0 Mashups: Remixing Data and Web Services</title>
+	<author>Raymond Yee</author>
+	<publisher>Apress</publisher>
+	<description>Teaches you everything you need to create useful, dynamic real–world applications using APIs, web services, Ajax, web standards, and server–side languages.</description>
+  </book>
+  <book isbn13="978-1-43020-985-0">
+    <title>AdvancED AIR Applications</title>
+	<author>Marco Casario</author>
+	<author>Koen De Weggheleire</author>
+	<author>Peter Elst</author>
+	<author>Zach Stepek</author>
+	<publisher>friends of ED</publisher>
+	<description>Takes you step-by-step through what's possible with AIR, not only teaching you the advanced techniques, but also providing case studies to show them in action.</description>
+  </book>
+  <book isbn13="978-1-59059-864-1">
+    <title>Beginning PHP and MySQL E-Commerce: From Novice to Professional, Second Edition</title>
+	<author>Emilian Balanescu</author>
+	<author>Christian Darie</author>
+	<publisher>Apress</publisher>
+	<description>Covers every step of the design and building process involved in creating powerful, extendable e–commerce web sites. </description>
+  </book>
+</inventory>
